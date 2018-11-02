@@ -1,6 +1,6 @@
 # showing off:
 
-**author:** Andrew Nyaisonga, Lusine Keshishyan / tado-mi
+**author:** [Andrew Nyaisonga](https://github.com/AndrewNyaisonga), Lusine Keshishyan / tado-mi
 
 **date:**   28 Nov 2017
 
