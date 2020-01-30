@@ -51,21 +51,21 @@ void print_database() {
 }
 
 int main(){
-   
+
 	initiate_CSG();
-	read("CSG.txt");
- 
+	read("in/CSG.txt");
+
 	initiate_SNAP();
-	read("SNAP.txt");
-	
+	read("in/SNAP.txt");
+
 	initiate_CP();
-	read("CP.txt");
+	read("in/CP.txt");
 
 	initiate_CDH();
-	read("CDH.txt");
+	read("in/CDH.txt");
 
 	initiate_CR();
-	read("CR.txt");
+	read("in/CR.txt");
 
 	printf("DATABASE:\n");
 	print_database();
@@ -78,5 +78,5 @@ int main(){
 	ndh_r("C. Brown", "Tu", "10AM");
 
 	return 0;
- 
+
 }
