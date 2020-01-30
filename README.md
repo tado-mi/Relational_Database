@@ -1,16 +1,10 @@
 # showing off:
 
-**author:** Andrew Nyaisonga, Lusine Keshishyan / tado-mi
+Code written by [Andrew Nyaisonga](https://github.com/AndrewNyaisonga) and [Lusine Keshishyan / tado-mi](https://github.com/tado-mi), implemented in November 2017.
 
-**date:**   28 Nov 2017
+Following is a brute, hard-coded implementation of a Relational Database in C, for a course taken at the University of Rochester. It is made public to demonstrate a code sample by the authors, and for learning. We trust it will not be used to violate academic honesty policies. We followed the relational database described in [FOCS](http://infolab.stanford.edu/~ullman/focs/ch08.pdf).<br/>
 
-**use:**    free. credit when due is encouraged and appreciated
-
-# general
-
-the included closely follows the relational database described in [FOCS](http://infolab.stanford.edu/~ullman/focs/ch08.pdf). it is a hard coded implementation (spesific to the given database) with a significant amount of copy-paste. <br\>
-
-we implemented data structures of a **binary tree**, **linked list** (general) and a **hash table** (custom to each relation). As an independetly impleneted data structure, linked list stores an **int**, representing indeces. the data stored in a binary tree node is a linked list, corresponding to indeces of all the entries that belong in that node of the binary tree in the hash table.
+We implemented data structures of a **binary tree**, **linked list** (general) and a **hash table** (custom to each relation). As an independently implemented data structure, linked list stores an **int**, representing indeces. the data stored in a binary tree node is a linked list, corresponding to indeces of all the entries that belong in that node of the binary tree in the hash table.
 
 each of the implemented relation acts as a linked list as well, having a pointer to an 'object' of the same data type and is used to address collisions.
 
@@ -24,24 +18,16 @@ implementation of 3 simple functions to be used in the relational database.<br/>
 
 ## operation.c
 
-two hardcoded functions to answer queries of certain form.
+Hardcoded functions to answer queries of certain form.
 
 ## bin_tree.c
 
 a simple [tree](https://en.wikipedia.org/wiki/Binary_tree) data structure.<br\>
-sorting is addressed when implementing "insert" functions of the relations that use a secondary index.
+sorting is addressed when implementing "insert" functions of the relations that use a secondary index (such as SNAP).
 
 ## linked_list.c
 
 a simple [linked list](https://en.wikipedia.org/wiki/Linked_list) data structure.
-
-## relations
-
-we will discuss **SNAP.c**, since all the relations are implemented with the same logic and following the same 'template', and SNAP is the most complicated one.
-
-### SNAP.c
-
--- coming soon
 
 # compiling
 
@@ -53,11 +39,11 @@ hit on the terminal
 
 equivalent to:
 
-	gcc main.c -o main
-	./main
-	rm main
+	gcc main.c -o main.out
+	./main.out
+	rm main.out
 
 # future aspirations
 
-* create a generic data structure of a tuple, that supports primary and secondary indexing, select, project and join operations
-* handle invalid queries
+- [ ] create a generic data structure of a tuple, that supports primary and secondary indexing, select, project and join operations
+- [ ] handle invalid queries
