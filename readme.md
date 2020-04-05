@@ -1,6 +1,6 @@
-# showing off:
+# Relational Database:
 
-Code written by [Andrew Nyaisonga](https://github.com/AndrewNyaisonga) and [Lusine Keshishyan / tado-mi](https://github.com/tado-mi), implemented in November 2017.
+Code written by [Andrew Nyaisonga](https://github.com/AndrewNyaisonga) and [tado-mi](https://github.com/tado-mi), implemented in November 2017.
 
 Following is a brute, hard-coded implementation of a Relational Database in C, for a course taken at the University of Rochester. It is made public to demonstrate a code sample by the authors, and for learning. We trust it will not be used to violate academic honesty policies. We followed the relational database described in [FOCS](http://infolab.stanford.edu/~ullman/focs/ch08.pdf).<br/>
 
@@ -8,7 +8,7 @@ We implemented data structures of a **binary tree**, **linked list** (general) a
 
 each of the implemented relation acts as a linked list as well, having a pointer to an 'object' of the same data type and is used to address collisions.
 
-# included files:
+# Files:
 
 ## supplement_func.c
 
@@ -29,9 +29,9 @@ sorting is addressed when implementing "insert" functions of the relations that 
 
 a simple [linked list](https://en.wikipedia.org/wiki/Linked_list) data structure.
 
-# compiling
+# Run
 
-hit on the terminal
+There is an included `makefile` for convenience. To use it, hit on the terminal
 
 	make
 	make run
@@ -43,7 +43,10 @@ equivalent to:
 	./main.out
 	rm main.out
 
-# future aspirations
+# Plans:
 
-- [ ] create a generic data structure of a tuple, that supports primary and secondary indexing, select, project and join operations
-- [ ] handle invalid queries
+- [ ] improve the makefile
+- [ ] improve the usage of header files
+- [ ] **generalize**: create a generic data structure of a tuple that supports primary and secondary indexing, select, project and join operations
+- [ ] handle **invalid queries**
+- [ ] write a generic BST -- perhaps as its own project?
